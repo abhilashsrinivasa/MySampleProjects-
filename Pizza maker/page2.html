@@ -1,0 +1,206 @@
+<html>
+<head>
+<link rel="stylesheet" href="styles/style2.css">
+<script>
+function validateForm(){
+			sessionStorage.clear();
+			if(document.querySelector('[name="pepperoni"]:checked') != null){
+				var pepperoni = document.querySelector('[name="pepperoni"]:checked');
+				sessionStorage.setItem("pepperoni", pepperoni.value);
+			}
+
+			if(document.querySelector('[name="italianSausage"]:checked') != null){
+				var sausage =document.querySelector('[name="italianSausage"]:checked');
+				sessionStorage.setItem("sausage", sausage.value);
+			}
+
+			if(document.querySelector('[name="slicedItalianSausage"]:checked') != null){
+				var slicedsausage =document.querySelector('[name="slicedItalianSausage"]:checked');
+				sessionStorage.setItem("slicedsausage", slicedsausage.value);
+			}
+
+			if(document.querySelector('[name="beef"]:checked') != null){
+				var beef =document.querySelector('[name="beef"]:checked');
+				sessionStorage.setItem("beef", beef.value);
+			}
+
+			if(document.querySelector('[name="phillySteak"]:checked') != null){
+				var steak =document.querySelector('[name="phillySteak"]:checked');
+				sessionStorage.setItem("steak", steak.value);
+			}
+
+			if(document.querySelector('[name="ham"]:checked') != null){
+				var ham =document.querySelector('[name="ham"]:checked');
+				sessionStorage.setItem("ham", ham.value);
+			}
+
+			if(document.querySelector('[name="bacon"]:checked') != null){
+				var bacon =document.querySelector('[name="bacon"]:checked');
+				sessionStorage.setItem("bacon", bacon.value);
+			}
+
+			if(document.querySelector('[name="salami"]:checked') != null){
+				var salami =document.querySelector('[name="salami"]:checked');
+				sessionStorage.setItem("salami", salami.value);
+			}
+
+			if(document.querySelector('[name="premiumChicken"]:checked') != null){
+				var chicken =document.querySelector('[name="premiumChicken"]:checked');
+				sessionStorage.setItem("chicken", chicken.value);
+			}
+
+			//non-meats
+			if(document.querySelector('[name="cheddarCheese"]:checked') != null){
+				var ccheese =document.querySelector('[name="cheddarCheese"]:checked');
+				sessionStorage.setItem("ccheese", ccheese.value);
+			}
+
+			if(document.querySelector('[name="fetaCheese"]:checked') != null){
+				var fcheese =document.querySelector('[name="fetaCheese"]:checked');
+				sessionStorage.setItem("fcheese", fcheese.value);
+			}
+
+			if(document.querySelector('[name="shreddedParmesan"]:checked') != null){
+				var SParmesan =document.querySelector('[name="shreddedParmesan"]:checked');
+				sessionStorage.setItem("SParmesan", SParmesan.value);
+			}
+
+			if(document.querySelector('[name="shreddedProvolone"]:checked') != null){
+				var pcheese =document.querySelector('[name="shreddedProvolone"]:checked');
+				sessionStorage.setItem("pcheese", pcheese.value);
+			}
+
+			if(document.querySelector('[name="bananaPeppers"]:checked') != null){
+				var banana =document.querySelector('[name="bananaPeppers"]:checked');
+				sessionStorage.setItem("banana", banana.value);
+			}
+
+			if(document.querySelector('[name="blackOlives"]:checked') != null){
+				var olives =document.querySelector('[name="blackOlives"]:checked');
+				sessionStorage.setItem("olives", olives.value);
+			}
+			if(document.querySelector('[name="dicedTomatoes"]:checked') != null){
+				var dicedTomatoes =document.querySelector('[name="dicedTomatoes"]:checked');
+				sessionStorage.setItem("dicedTomatoes", dicedTomatoes.value);
+			}
+			
+
+			if(document.querySelector('[name="garlic"]:checked') != null){
+				var garlic =document.querySelector('[name="garlic"]:checked');
+				sessionStorage.setItem("garlic", garlic.value);
+			}
+
+			if(document.querySelector('[name="greenPeppers"]:checked') != null){
+				var green =document.querySelector('[name="greenPeppers"]:checked');
+				sessionStorage.setItem("green", green.value);
+			}
+
+			if(document.querySelector('[name="jalepenoPeppers"]:checked') != null){
+				var jalapeno =document.querySelector('[name="jalepenoPeppers"]:checked');
+				sessionStorage.setItem("jalapeno", jalapeno.value);
+			}
+
+			if(document.querySelector('[name="mushrooms"]:checked') != null){
+				var mushrooms =document.querySelector('[name="mushrooms"]:checked');
+				sessionStorage.setItem("mushrooms", mushrooms.value);
+			}
+
+			if(document.querySelector('[name="pineapple"]:checked') != null){
+				var pineapple =document.querySelector('[name="pineapple"]:checked');
+				sessionStorage.setItem("pineapple", pineapple.value);
+			}
+
+			if(document.querySelector('[name="onions"]:checked') != null){
+				var onions =document.querySelector('[name="onions"]:checked');
+				sessionStorage.setItem("onions", onions.value);
+			}
+
+			if(document.querySelector('[name="roastedRedPeppers"]:checked') != null){
+				var roasted =document.querySelector('[name="roastedRedPeppers"]:checked');
+				sessionStorage.setItem("roasted", roasted.value);
+			}	
+
+			if(document.querySelector('[name="spinach"]:checked') != null){
+				var spinach =document.querySelector('[name="spinach"]:checked');
+				sessionStorage.setItem("spinach", spinach.value);
+			}	
+	
+			if(document.querySelector('[name="hotSauce"]:checked') != null){
+				var sauce =document.querySelector('[name="hotSauce"]:checked');
+				sessionStorage.setItem("sauce", sauce.value);
+			}	
+			return true;
+		}
+</script>
+</head>
+<body>
+<div id="obox">
+<form action="page3.html" onsubmit="return validateForm()" method="post">
+<center><h1> Build Your Own Pizza</h1></center>
+<table style="width:100%">
+<tr>
+    <td id="td1">SIZE & CRUST</td>
+    <td id="td2">CHEESE & SAUCE</td>		
+    <td id="td3">TOPPINGS</td>
+  </tr>
+</table>
+<h2>CHOOSE TOPPINGS</h2>
+<h4>CHOOSE MEATS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ CHOOSE NON-MEATS</h4>
+<div style="width:100%">
+<div id="left1"  style="width:25%; float:left; text-align:justify; padding:25px" >
+<input type="checkbox" name="pepperoni" id="pepperoni">Pepperoni<br>
+<input type="checkbox" name="italianSausage" id="italianSausage">Italian Sausage<br>
+<input type="checkbox" name="slicedItalianSausage" id="slicedItalianSausage">Sliced Italian Sausage<br>
+<input type="checkbox" name="beef" id="beef">Beef<br>
+<input type="checkbox" name="phillySteak" id="phillySteak">Philly Steak<br>
+<input type="checkbox" name="ham" id="ham">Ham<br>
+<input type="checkbox" name="bacon" id="bacon">Bacon<br>
+</div>
+<br>
+<br>
+<div id="left2"  style="width:25%; float:left; text-align:justify;"  >
+<input type="checkbox" name="salami" id="salami">Salami<br>
+<input type="checkbox" name="premiumChicken" id="premiumChicken">Premium Chicken<br>
+</div>
+<div id="left3"  style="width:20%; float:left; text-align:justify;"  >
+<input type="checkbox" name="cheddarCheese" id="cheddarCheese">Cheddar Cheese<br>
+<input type="checkbox" name="fetaCheese" id="fetaCheese">Feta Cheese<br>
+<input type="checkbox" name="shreddedParmesan" id="shreddedParmesan">Shredded Parmesan<br>
+<input type="checkbox" name="shreddedProvolone" id="shreddedProvolone">Shredded Provolone<br>
+<input type="checkbox" name="bananaPeppers" id="bananaPeppers">Banana Peppers<br>
+<input type="checkbox" name="blackOlives" id="blackOlives">Black Olives<br>
+<input type="checkbox" name="dicedTomatoes" id="dicedTomatoes">Diced Tomatoes<br>
+<input type="checkbox" name="garlic" id="garlic">Garlic<br>
+</div>
+
+<input type="checkbox" name="greenPeppers" id="greenPeppers">Green Peppers<br>
+<input type="checkbox" name="jalepenoPeppers" id="jalepenoPeppers">Jalepeno Peppers<br>
+<input type="checkbox" name="mushrooms" id="mushrooms">Mushrooms<br>
+<input type="checkbox" name="pineapple" id="pineapple">Pineapple<br>
+<input type="checkbox" name="onions" id="onions">Onions<br>
+<input type="checkbox" name="roastedRedPeppers" id="roastedRedPeppers">Roasted Red Peppers<br>
+<input type="checkbox" name="spinach" id="spinach">Spinach<br>
+<input type="checkbox" name="hotSauce" id="hotSauce">Hot Sauce<br>
+
+
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<button id="b1" style="font-size:17" type="submit">Build</style></button>
+<button id="b2" style="font-size:17" type="Reset">Cancel</style></button>
+</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<html ng-app="simpleApp">
+    <head>
+        <script src="angular.js"></script>
+        <script src="angular2.js"></script>
+        <link rel="stylesheet" href=bootstrap.css></link>
+        <style>
+            body
+            {
+            padding:60;
+            margin:60;
+            
+            }
+    </style>
+    </head>
+    <body class="lead text-left">
+        Enter number : <input type="text" id="sq"  name="sq" ng-model="sq" placeholder="Enter a number">
+        <input type="button" class="btn btn-default" value="Test Button">
+        <div ng-controller="mathController">
+            <p ng-show="sq"><br>The square of {{sq+" is "+square(sq)}}</p>
+        </div>
+    </body>
+</html>

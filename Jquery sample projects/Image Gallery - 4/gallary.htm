@@ -1,0 +1,104 @@
+<html>
+    <head>
+        
+        <script src="jquery.js"></script>
+        
+        
+        <script>
+            
+            var i=3;
+            $(document).ready(
+            animate
+            );
+           function animate()
+            {
+                
+                $('#left').click(
+                    function()
+                    {
+                        
+                        if(i==3)i=8;
+                        else i--;
+                        
+                        
+                       $('#img').animate({left:630,width:0},1000,function()
+                        {
+                            $('#img').attr('src',"i"+i+".jpeg").animate({width:0,left:630},100).animate({width:0,left:730},300).animate({width:0,left:530},300).animate({width:0,left:630},150).animate({top:200,height:200},200).animate({top:150,height:400},200).animate({width:400,left:450},1000);
+                        });
+                      
+                        
+                    });
+                
+                $('#right').click(
+                    function()
+                    {
+                        
+                        if(i==8)i=3;
+                        else i++;
+                        $('#img').animate({left:630,width:0},1000,function()
+                        {
+                            $('#img').attr('src',"i"+i+".jpeg").animate({width:0,left:630},100).animate({width:0,left:730},300).animate({width:0,left:530},300).animate({width:0,left:630},150).animate({top:200,height:200},200).animate({top:150,height:400},200).animate({width:400,left:450},1000);
+                            
+                            
+                            
+                            
+                        });
+                      
+                        
+                        
+                    });
+                
+            }
+            
+            
+        </script>
+        
+        <style type="text/css">
+        
+            #img
+            {
+                position:absolute;
+                left:450;
+                top:150;
+                border: 3px solid black;
+                border-radius:30px;
+                padding : 10 10 10 10;
+            }
+           #left
+            {
+                border:2px solid black;
+                border-radius:40px;
+                padding:20 20 20 20;
+                background: white;
+            }
+            #right
+            {
+                border:2px solid black;
+                border-radius:40px;
+                padding:20 20 20 20;
+                background: white;
+            }
+            #gallery
+            {
+                position:absolute;
+                top:30;
+                left:580;
+            }
+            body
+            {
+                background:#ede9e9;
+            }
+        
+        </style>
+        
+        
+        
+    </head>
+    <body>
+        
+        <img id="img" src="i3.jpeg" width=400 height=400  >
+       <img src="left.png" style="position:absolute;top:300;left:0;" id="left" height=30 width=30>
+       <img src="right-arrow.png"   style="position:absolute;top:300;left:1292 " id="right" height=30 width=30>
+        <div id="gallery"><h2>Image Gallery</h2></div>
+    </body>
+</html>

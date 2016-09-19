@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+      <link rel="stylesheet" href="styles/style3.css">
+      <script type="text/javascript" src="https://www.google.com/jsapi?autoload={'modules':[{'name':'visualization','version':'1','packages':['corechart']}]}">
+      </script>
+  </head>
+  <body>
+     <center><h1> Build Your Own Pizza</h1></center>
+<table style="width:100%">
+<tr>
+    <td id="td1"><font color="white">&nbsp; &nbsp; &nbsp; DASHBOARD</font></td>
+  </tr>
+</table>
+        <div id= "center">
+          <div class="col-2">
+            <div id="piechart" style="width: 450px; height: 450px;"></div>
+          </div>
+          <script type="text/javascript">
+          google.load("visualization", "1", {packages:["corechart"]});
+          google.setOnLoadCallback(drawChart);
+        
+          function drawChart() {
+          var toppings = [];
+           toppings.push(['topping', 'quantity']);
+
+          if(sessionStorage.getItem("pepperoni") != null){
+            var p = sessionStorage.getItem("pepperoni");
+             toppings.push(["Pepperoni", 1]);
+          }
+          
+           if(sessionStorage.getItem("sausage") != null){
+            var s = sessionStorage.getItem("sausage");
+             toppings.push(["Italian Sausage", 1]);
+          }
+
+          if(sessionStorage.getItem("slicedsausage") != null){
+            var ss = sessionStorage.getItem("slicedsausage");
+             toppings.push(["SlicedItalianSausage", 1]);
+          }
+
+          if(sessionStorage.getItem("beef") != null){
+            var b = sessionStorage.getItem("beef");
+             toppings.push(["Beef", 1]);
+          }
+
+           if(sessionStorage.getItem("steak") != null){
+            var s = sessionStorage.getItem("steak");
+             toppings.push(["Philly Steak", 1]);
+          }
+
+          if(sessionStorage.getItem("ham") != null){
+            var s = sessionStorage.getItem("ham");
+             toppings.push(["Ham", 1]);
+          }
+
+          if(sessionStorage.getItem("bacon") != null){
+            var s = sessionStorage.getItem("bacon");
+             toppings.push(["Bacon", 1]);
+          }
+
+          if(sessionStorage.getItem("salami") != null){
+            var s = sessionStorage.getItem("salami");
+             toppings.push(["Salami", 1]);
+          }
+
+          if(sessionStorage.getItem("chicken") != null){
+            var s = sessionStorage.getItem("chicken");
+             toppings.push(["Premium Chicken", 1]);
+          }
+
+          if(sessionStorage.getItem("ccheese") != null){
+            var s = sessionStorage.getItem("ccheese");
+             toppings.push(["Cheddar Cheese", 1]);
+          }
+
+          if(sessionStorage.getItem("fcheese") != null){
+            var s = sessionStorage.getItem("fcheese");
+             toppings.push(["Feta Cheese", 1]);
+          }
+
+          if(sessionStorage.getItem("asiago") != null){
+            var s = sessionStorage.getItem("asiago");
+             toppings.push(["Shredded Parmesan", 1]);
+          }
+
+          if(sessionStorage.getItem("pcheese") != null){
+            var s = sessionStorage.getItem("pcheese");
+             toppings.push(["Shredded Provolone", 1]);
+          }
+
+          if(sessionStorage.getItem("banana") != null){
+            var s = sessionStorage.getItem("banana");
+             toppings.push(["Banana Peppers", 1]);
+          }
+
+          if(sessionStorage.getItem("olives") != null){
+            var s = sessionStorage.getItem("olives");
+             toppings.push(["Black Olives", 1]);
+          }
+
+          if(sessionStorage.getItem("garlic") != null){
+            var s = sessionStorage.getItem("garlic");
+             toppings.push(["Garlic", 1]);
+          }
+
+          if(sessionStorage.getItem("green") != null){
+            var s = sessionStorage.getItem("green");
+             toppings.push(["Green Peppers", 1]);
+          }
+
+          if(sessionStorage.getItem("jalapeno") != null){
+            var s = sessionStorage.getItem("jalapeno");
+             toppings.push(["Jalepeno Peppers", 1]);
+          }
+
+          if(sessionStorage.getItem("mushrooms") != null){
+            var s = sessionStorage.getItem("mushrooms");
+             toppings.push(["Mushrooms", 1]);
+          }
+
+           if(sessionStorage.getItem("pineapple") != null){
+            var s = sessionStorage.getItem("pineapple");
+             toppings.push(["Pineapple", 1]);
+          }
+
+          if(sessionStorage.getItem("onions") != null){
+            var s = sessionStorage.getItem("onions");
+             toppings.push(["Onions", 1]);
+          }
+
+          if(sessionStorage.getItem("roasted") != null){
+            var s = sessionStorage.getItem("roasted");
+             toppings.push(["Roasted Red Peppers", 1]);
+          }
+
+          if(sessionStorage.getItem("spinach") != null){
+            var s = sessionStorage.getItem("spinach");
+             toppings.push(["spinach", 1]);
+          }
+
+          if(sessionStorage.getItem("tomatoes") != null){
+            var s = sessionStorage.getItem("tomatooes");
+             toppings.push(["Diced tomatoes", 1]);
+          }
+
+          if(sessionStorage.getItem("sauce") != null){
+            var s = sessionStorage.getItem("sauce");
+             toppings.push(["Hot Sauce", 1]);
+          }
+
+        var data = google.visualization.arrayToDataTable(toppings);
+
+        var options = {
+          title: 'Toppings chosen'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+       </script>
+
+      <div class="col-2"> 
+      <div id="donutchart" style="width: 450px; height: 450px;"></div>
+    </div>
+      <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart1);
+          function drawChart1(){
+            var toppings = [];
+           toppings.push(['topping', 'quantity']);
+
+          if(sessionStorage.getItem("pepperoni") != null){
+            var p = sessionStorage.getItem("pepperoni");
+             toppings.push(["Pepperoni", 1]);
+          }
+          
+           if(sessionStorage.getItem("sausage") != null){
+            var s = sessionStorage.getItem("sausage");
+             toppings.push(["Italian Sausage", 1]);
+          }
+
+          if(sessionStorage.getItem("slicedsausage") != null){
+            var ss = sessionStorage.getItem("slicedsausage");
+             toppings.push(["Sliced Italian Sausage", 1]);
+          }
+
+          if(sessionStorage.getItem("beef") != null){
+            var b = sessionStorage.getItem("beef");
+             toppings.push(["Beef", 1]);
+          }
+
+           if(sessionStorage.getItem("steak") != null){
+            var s = sessionStorage.getItem("steak");
+             toppings.push(["Philly Steak", 1]);
+          }
+
+          if(sessionStorage.getItem("ham") != null){
+            var s = sessionStorage.getItem("ham");
+             toppings.push(["Ham", 1]);
+          }
+
+          if(sessionStorage.getItem("bacon") != null){
+            var s = sessionStorage.getItem("bacon");
+             toppings.push(["Bacon", 1]);
+          }
+
+          if(sessionStorage.getItem("salami") != null){
+            var s = sessionStorage.getItem("salami");
+             toppings.push(["Salami", 1]);
+          }
+
+          if(sessionStorage.getItem("chicken") != null){
+            var s = sessionStorage.getItem("chicken");
+             toppings.push(["Premium Chicken", 1]);
+          }
+
+          if(sessionStorage.getItem("ccheese") != null){
+            var s = sessionStorage.getItem("ccheese");
+             toppings.push(["Cheddar Cheese", 1]);
+          }
+
+          if(sessionStorage.getItem("fcheese") != null){
+            var s = sessionStorage.getItem("fcheese");
+             toppings.push(["Feta Cheese", 1]);
+          }
+
+          if(sessionStorage.getItem("asiago") != null){
+            var s = sessionStorage.getItem("asiago");
+             toppings.push(["Shredded Parmesan", 1]);
+          }
+
+          if(sessionStorage.getItem("pcheese") != null){
+            var s = sessionStorage.getItem("pcheese");
+             toppings.push(["Shredded Provolone", 1]);
+          }
+
+          if(sessionStorage.getItem("banana") != null){
+            var s = sessionStorage.getItem("banana");
+             toppings.push(["Banana Peppers", 1]);
+          }
+
+          if(sessionStorage.getItem("olives") != null){
+            var s = sessionStorage.getItem("olives");
+             toppings.push(["Olives", 1]);
+          }
+
+          if(sessionStorage.getItem("garlic") != null){
+            var s = sessionStorage.getItem("garlic");
+             toppings.push(["Garlic", 1]);
+          }
+
+          if(sessionStorage.getItem("green") != null){
+            var s = sessionStorage.getItem("green");
+             toppings.push(["Green Peppers", 1]);
+          }
+
+          if(sessionStorage.getItem("jalapeno") != null){
+            var s = sessionStorage.getItem("jalapeno");
+             toppings.push(["Jalapeno Peppers", 1]);
+          }
+
+          if(sessionStorage.getItem("mushrooms") != null){
+            var s = sessionStorage.getItem("mushrooms");
+             toppings.push(["Mushrooms", 1]);
+          }
+
+           if(sessionStorage.getItem("pineapple") != null){
+            var s = sessionStorage.getItem("pineapple");
+             toppings.push(["Pinanpple", 1]);
+          }
+
+          if(sessionStorage.getItem("onions") != null){
+            var s = sessionStorage.getItem("onions");
+             toppings.push(["Onions", 1]);
+          }
+
+          if(sessionStorage.getItem("roasted") != null){
+            var s = sessionStorage.getItem("roasted");
+             toppings.push(["Roasted Red Peppers", 1]);
+          }
+
+          if(sessionStorage.getItem("spinach") != null){
+            var s = sessionStorage.getItem("spinach");
+             toppings.push(["Spinach", 1]);
+          }
+
+          if(sessionStorage.getItem("tomatoes") != null){
+            var s = sessionStorage.getItem("tomatoes");
+             toppings.push(["Diced Tomatoes", 1]);
+          }
+
+          if(sessionStorage.getItem("sauce") != null){
+            var s = sessionStorage.getItem("sauce");
+             toppings.push(["Hot Sauce", 1]);
+          }
+
+          var data =  google.visualization.arrayToDataTable(toppings);
+
+          var optionsOuter = {
+          title: 'My Daily Activities',
+          pieHole: 0.4,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+        chart.draw(data, optionsOuter);
+        }
+
+          
+       </script>
+        </div>
+    
+	   <a href="page1.html"><button id="b" style="font-size:20; " >Back</button></a>
+
+         
+        </body>
+</html>
+       
+       

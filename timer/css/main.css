@@ -1,0 +1,27 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+body
+{
+	width: 100%;
+	background: blue;
+}
+header section
+{
+	text-align: center;
+}
+#timer{
+    text-align: center;
+    font-family: tahoma;
+    padding: 5%;
+    font-size: 3em;
+    font-weight: bold;
+}
+section{
+    text-align:center;
+}
+button
+{
+    padding: 2%;
+}

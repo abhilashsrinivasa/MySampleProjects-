@@ -1,0 +1,146 @@
+<html>
+    <head>
+        <title>Ludo V 1.0 by Abhilash Srinivasa </title>
+        <script src="jquery.js"></script>
+        <script src="jquerycode.js" ></script>
+        <script >
+
+           
+        </script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body onclick="showCoords(event);">
+        <div id="ludo">
+        <div id="ludo_in">
+            <table>
+                <tr><td rowspan="6" colspan="6" class="red"></td><td></td><td ></td><td></td><td rowspan="6" colspan="6" class="green" ></td></tr>
+                <tr><td></td><td class="green"></td><td class="green"></td></tr>
+                <tr><td></td><td class="green"></td><td></td></tr>
+                <tr><td></td><td class="green"></td><td></td></tr>
+                <tr><td></td><td class="green"></td><td></td></tr>
+                <tr><td></td><td class="green"></td><td></td></tr>
+                <tr><td></td><td class="red"></td><td></td><td></td><td></td><td></td><td rowspan="3" colspan="3" id="home"></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td class="red"></td><td class="red"></td><td class="red"></td><td class="red"></td><td class="red"></td><td class="yellow"></td><td class="yellow"></td><td class="yellow"></td><td class="yellow"></td><td class="yellow"></td><td></td></tr>
+                <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="yellow"></td><td></td></tr>
+                <tr><td rowspan="6" colspan="6" class="blue"></td><td></td><td class="blue"></td><td></td><td rowspan="6" colspan="6" class="yellow"></td></tr>
+                <tr><td></td><td class="blue"></td><td></td></tr>
+                <tr><td></td><td class="blue"></td><td></td></tr>
+                <tr><td></td><td class="blue"></td><td></td></tr>
+                <tr ><td class="blue"></td><td class="blue"></td><td></td></tr>
+                <tr><td></td><td></td><td></td></tr>
+            </table>
+        </div>
+        </div>
+
+        <div class="blueguti">  <span id="bluescore"></span></div>
+
+        <br>
+        <div class="greenguti"> <span id="greenscore"></div>
+
+
+
+
+        <div id="player2result">
+
+
+        <br>
+             <span id="redscore"></span><div class="redguti"></div>
+        <br>
+            <span id="yellowscore"></span><div class="yellowguti"></div>
+        <br>
+
+        </div>
+
+
+
+
+        <br>
+        <div id="player1">
+            <h3 align=center>Player 1</h3>
+            <br>
+            <input type="button" value="Roll Dice" id="button1" name="button1">
+            <br><br>
+            <div id="player1dice"></div>
+        </div>
+
+
+
+
+
+        <div id="player2">
+            <h3 align=center>Player 2</h3>
+              <br>
+            <input type="button" value="Roll Dice" id="button2" name="button2">
+            <br><br>
+            <div id="player2dice"></div>
+            </div>
+
+
+
+
+        <div id="rg1" class="redguti guti" ></div>
+        <div id="rg2" class="redguti guti" ></div>
+        <div id="rg3" class="redguti guti" ></div>
+        <div id="rg4" class="redguti guti" ></div>
+        <div id="bg1" class="blueguti guti" ></div>
+        <div id="bg2" class="blueguti guti" ></div>
+        <div id="bg3" class="blueguti guti" ></div>
+        <div id="bg4" class="blueguti guti" ></div>
+        <div id="gg1" class="greenguti guti" ></div>
+        <div id="gg2" class="greenguti guti" ></div>
+        <div id="gg3" class="greenguti guti" ></div>
+        <div id="gg4" class="greenguti guti" ></div>
+        <div id="yg1" class="yellowguti guti" ></div>
+        <div id="yg2" class="yellowguti guti"></div>
+        <div id="yg3" class="yellowguti guti"></div>
+        <div id="yg4" class="yellowguti guti"></div>
+
+
+        <div id="wc1" class="whitecircle"></div>
+        <div id="wc2" class="whitecircle"></div>
+        <div id="wc3" class="whitecircle"></div>
+        <div id="wc3" class="whitecircle"></div>
+        <div id="wc5" class="whitecircle"></div>
+        <div id="wc6" class="whitecircle"></div>
+        <div id="wc7" class="whitecircle"></div>
+        <div id="wc8" class="whitecircle"></div>
+        <div id="wc9" class="whitecircle"></div>
+        <div id="wc10" class="whitecircle"></div>
+        <div id="wc11" class="whitecircle"></div>
+        <div id="wc12" class="whitecircle"></div>
+        <div id="wc13" class="whitecircle"></div>
+        <div id="wc14" class="whitecircle"></div>
+        <div id="wc15" class="whitecircle"></div>
+        <div id="wc4" class="whitecircle"></div>
+        <div id="wc16" class="whitecircle"></div>
+
+
+        <input type="button" name="start" id="start" value="Start">
+
+
+        <div id="xycoordinate"><h4>Notifications/Warnings</h4>
+            <br>
+            </div>
+
+        <div id="rules">
+            <ul>
+                <li>Always try clicking on a white area for best results.</li>
+               <li>No cheating . DUH!!</li>
+            </ul>
+
+            </div>
+            <input type="button" value="Scroll UP" id="scrollup" name="scrollup">
+
+            <div id="warning"></div>
+
+            <div id="startpopup">
+                <div id="popupmsg">Hello There. Enjoy Playing LUDO<br>PLZ NOTE THIS IS IN THE BETA PHASE
+                <br>This is not  a stable version and there can be
+                    <br>unforseen problems.This is a free edition(freeware).
+                    <br>Enjoy
+                </div>
+            </div>
+
+
+    </body>
+</html>

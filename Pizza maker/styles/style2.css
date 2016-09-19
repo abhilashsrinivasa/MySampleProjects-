@@ -1,0 +1,61 @@
+#obox
+{
+ 
+ border-style: double;
+ border-color: blue;
+ position: absolute;
+ width: 900px;
+ height: 500px;
+ top: 15px;
+ left: 45px;
+ padding: 30px 30px 50px 30px;
+ background-color: orange
+}
+#b1{
+position: absolute;
+background-color:white;
+border-style: double;
+top: 500px;
+left: 60px;
+padding: 15px 35px;
+
+}
+
+#b2{
+position: absolute;
+background-color:white;
+border-style: double;
+top: 500px;
+left: 550px;
+padding: 15px 35px;
+
+}
+h1, h4, h2
+{
+color: #FFFFFF
+}
+
+
+table, th {
+   border: 1px solid black;
+   padding: 0px;
+   background-color: blue;
+}
+#td1{
+   border: 1px solid black;
+   padding: 5px;
+   background-color: blue;
+}
+
+#td3 {
+   border: 1px solid black;
+   padding: 5px;
+   background-color: blue;
+}
+
+
+#td2{
+   border: 1px solid black;
+   padding: 5px;
+   background-color: blue;
+}

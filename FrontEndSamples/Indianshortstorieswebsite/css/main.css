@@ -1,0 +1,180 @@
+/*=====================
+grid
+====================*/
+*,
+*:before,
+*:after{
+  -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+      -box-sizing: border-box;
+}
+.container{
+	margin: 1000px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin: 0 20px;
+}
+/*==================
+Navigation
+======================*/
+.nav{
+	padding-left: 15px;
+	padding-right: 15px;
+	text-align: right;
+}
+.nav li{
+	display: inline-block;
+	vertical-align: top;
+}
+.nav a{
+	color:  #333300;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+
+}
+.nav a:hover{
+	color: #669900;
+}
+.primary-header .nav a{
+	border: 1px solid white;
+	background-color:#c2c2a3;
+	border-radius: 25%;
+	padding: 5px;
+}
+.primary-footer .nav a{
+	border: 1px solid white;
+	background-color: #c2c2a3;
+	border-radius: 45%;
+	padding: 5px;
+}
+
+/*=================
+logo
+=================*/
+.logo{
+	text-decoration: none;
+	float: left;
+	font-size: 35px;
+	margin: 0 auto;
+	padding: 15px 10px 10px 35px;
+	color: #333300;
+	font-family: 'Trirong', serif;
+}
+.logo:hover{
+	color: 333300;
+}
+/*--------------------
+footer
+---------------------*/
+.primary-footer small{
+	float: left;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-family: 'Cormorant Garamond', serif;
+}
+/*===============
+clearfix
+==================*/
+.clearfix:before,
+.clearfix:after{
+  content: "";
+  display: table;
+}
+.clearfix:after{
+  clear: both;
+}
+.clearfix{
+  clear: both;
+  *zoom: 1;
+}
+.clear{
+	clear: both;
+}
+/*--------------------
+typography
+-------------------*/
+
+/*
+h1, h2, h3, h4, p{
+	line-height: 45px;
+	margin-bottom: 22px;
+}
+*/
+.spacing{
+	line-height: 30px;
+}
+/*===================
+hero
+====================*/
+.hero{
+	margin: 0 20px;
+	padding: 100px 30px;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 400;
+	color: #404040;
+	background-color: #c2c2a3;
+	line-height: 20px;
+}
+.hero h3{
+	font-size: 40px;
+	margin-bottom: 30px;
+	color: #55552b;
+}
+/*==============
+Anchors
+================*/
+a{
+	text-decoration: none;
+	color: #997300;
+}
+.continue{
+	color:#7070db;
+}
+.continue:hover{
+	color: #ff3333;
+}
+.teaser{
+	text-align: center;
+	padding-left: 300px;
+	padding-right: 300px;
+}
+.teaser .one{
+	margin-bottom: 25px;
+}
+/*==============
+header
+===============*/
+header{
+	background-color: #adc2eb;
+}
+/*===============
+Footer
+==================*/
+.primary-footer{
+	background-color:  #adc2eb;
+	padding-bottom: 10px;
+	padding-top: 30px;
+}
+/*============
+Pages
+================*/
+.pages{
+	padding-bottom: 20px;
+	line-height: 25px;
+}
+.page-header{
+	padding-top: 20px;
+	text-align: center;
+	font-size: 30px;
+	font-weight: 500;
+	line-height: 20px;
+	font-family: 'Slabo 27px', serif;
+}
+.main-content{
+	background-color: #f2f2f2;
+	padding-right: 100px;
+	padding-left: 100px;
+
+}

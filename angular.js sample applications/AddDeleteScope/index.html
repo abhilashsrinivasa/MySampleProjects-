@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app='AddAndDelete'> 
+<head>
+	<title>Add and Delete</title>
+</head>
+<body>
+    <div ng-controller="addAndDelete">
+   	 	<ul>
+        	<li ng-repeat="food in foods">
+        		{{food}}
+            	<button ng-click="remove($food)">Remove</button>
+        	</li>
+    	</ul>
+
+    	<div>
+        	<input type="text" ng-model="foodName">
+        	<button type="submit" ng-click="add()">Add</button>
+    	</div>
+	</div>
+<script src="angular.min.js"></script>
+<script>
+    var app = angular.module('AddAndDelete',[]);
+		app.controller('addAndDelete', function($scope) {
+    		$scope.foods = [
+    			"Pizza",
+    			"Sushi",
+    			"BBQ"
+    		];
+
+    		$scope.add = function() {
+    			$scope.foods.push($scope.foodName);
+    			$scope.foodName = '';
+    		};
+
+    		$scope.remove = function(food) {
+    			$scope.foods.splice(food, 1);
+
+    		};
+		});		
+</script>
+</body>
+</html>

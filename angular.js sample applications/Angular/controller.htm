@@ -1,0 +1,55 @@
+<html ng-app="simpleApp">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="angular.js"></script>
+         <link href="bootstrap.css" rel="stylesheet">
+         <link href="controller.css" rel="stylesheet">
+        <script src="jquery.js"></script>
+        <script src="bootstrap.js"></script>
+        <script src="controller.js"></script>
+    </head>
+    <body ng-controller="simpleController">
+        Name : <input type="text" name="name" id="name" ng-model="name">
+        <br><br>
+        <p ng-show="name">You entered {{name}}</p>
+        <br><br>
+        
+        
+        
+        
+        <table class="table">
+            <caption>Contextual Table Layout</caption>
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Payment Date</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="active">
+                    <td>Product1</td>
+                    <td>23/11/2013</td>
+                    <td>Pending</td>
+                </tr>
+                <tr class="success">
+                    <td>Product2</td>
+                    <td>10/11/2013</td>
+                    <td>Delivered</td>
+                </tr>
+                <tr class="warning">
+                    <td>Product3</td>
+                    <td>20/10/2013</td>
+                    <td>In Call to confirm</td>
+                </tr>
+                <tr class="danger">
+                    <td>Product4</td>
+                    <td>20/10/2013</td>
+                    <td>Declined</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
